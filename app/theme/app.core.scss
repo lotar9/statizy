@@ -1,0 +1,90 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+.login-page{
+    background: url(/img/background.jpg) no-repeat center;
+}
+.login-card{
+        background-color: transparent;
+}
+.login-card > scroll-content > ion-card{
+    width: 50%;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+ion-card-footer{
+    padding:16px;
+}
+
+.action-button{
+    background-color: #FFFFFF;
+}
+
+.court-container{
+  max-width: 280px;
+  width: 280px;
+
+}
+scroll-content,
+.court-row-up,
+.court-row-down{
+  background-color: #E0F2F1;
+}
+.court-row-up{
+  padding: 10px 10px 0px 10px;
+
+}
+.court-row-down{
+  padding: 0px 10px 10px 10px;
+}
+
+.court-up{
+    background: url(/img/court-up.png) no-repeat center;
+}
+.court-down{
+    background: url(/img/court-down.png) no-repeat center;
+}
+.court{
+//    padding-top:50%;
+    background-size: cover;
+    position: relative;
+}
+.court:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 	/* initial ratio of 1:1*/
+    text-align: center;
+}
+.court-content,
+.court-line-content{
+    position:  absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.court-line{
+    position: relative;
+}
+.court-line:before{
+    content: "";
+    display: block;
+    padding-top: 100%; 	/* initial ratio of 3:1*/
+}
+.court-line-libero{
+    position: relative;
+}
+.court-line-libero:before{
+    content: "";
+    display: block;
+    padding-top: 66%; 	/* initial ratio of 3:1*/
+}
